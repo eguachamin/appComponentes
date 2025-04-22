@@ -30,7 +30,24 @@
     <ion-radio value="pineapple">Pineapple</ion-radio><br />
     <ion-radio value="cherries">Cherries</ion-radio>
   </ion-radio-group>
-
+  <br>
+  <br>
+  <ion-datetime></ion-datetime>
+  <br>
+  <ion-toggle>Evelyn</ion-toggle><br /><br />
+  <ion-toggle [checked]="true">Guachamin</ion-toggle><br /><br />
+  <br>
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Select a Fruit">
+        <div slot="label">Favorite Fruit <ion-text color="danger">(Required)</ion-text></div>
+        <ion-select-option value="apple">Apple</ion-select-option>
+        <ion-select-option value="banana">Banana</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <br>
 </ion-content>
 
 
