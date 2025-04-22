@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ejercicio en Clase</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Tu nombre</ion-label>
+    <ion-input [(ngModel)]="nombre" placeholder="Escribe tu nombre..."></ion-input>
+  </ion-item>
+
+  <p *ngIf="nombre">Hola, {{ nombre }}!</p>
+  <br>
+  <br>
+  <ion-header>
+  <ion-toolbar>
+    <ion-title>Ejercicio 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-button id="open-toast" expand="block">Open</ion-button>
+  <p id="message">Al dar clic aparecera informacion por 5 segundos.</p>
+  <ion-toast trigger="open-toast" message="Hola esto desaparecera en 5 segundos" [duration]="5000"></ion-toast>
+  <br>
+  <br>
+
+  <ion-radio-group value="strawberries">
+    <ion-radio value="grapes">Grapes</ion-radio><br />
+    <ion-radio value="strawberries">Strawberries</ion-radio><br />
+    <ion-radio value="pineapple">Pineapple</ion-radio><br />
+    <ion-radio value="cherries">Cherries</ion-radio>
+  </ion-radio-group>
+
+</ion-content>
+
+
+
+</ion-content>
+
+
